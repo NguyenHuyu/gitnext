@@ -17,43 +17,43 @@ export default function Header() {
               />
             </Link>
           </div>
-          <div className="flex items-center justify-center antialiased lg:ml-20 pt-1">
+          <div className="flex items-center justify-center antialiased lg:ml-20 pt-1 gap-3 ">
             <Link
               href="/"
-              className="flex items-center justify-center mr-10 text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+              className="flex items-center justify-center md:mr-10 text-xs md:text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
             >
               Home
             </Link>
             <Link
               href="/profile"
-              className="flex items-center justify-center mr-10 text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+              className="flex items-center justify-center md:mr-10 text-xs md:text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
             >
               Profile
             </Link>
             <Link
               href="/project"
-              className="flex items-center justify-center mr-10 text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+              className="flex items-center justify-center md:mr-10 text-xs md:text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
             >
               Project
             </Link>
             <Link
               href="/contact"
-              className="flex items-center justify-center mr-10 text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+              className="flex items-center justify-center md:mr-10 text-xs md:text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
             >
               Contact
             </Link>
             <Link
               href="/blogs"
-              className="flex items-center justify-center mr-10 text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+              className="flex items-center justify-center md:mr-10 text-xs md:text-base text-light-white-100 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
             >
               Blog
             </Link>
           </div>
         </div>
-        <div className="hidden md:flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <Link
             href="/login"
-            className="mr-5 text-lg font-medium text-white hover:scale-105 duration-300  transition ease-in-out  px-3 py-2 rounded-md bg-cyan-500 "
+            className="mr-5 text-xs md:text-base font-medium text-white hover:scale-105 duration-300  transition ease-in-out  px-3 py-2 rounded-md bg- "
           >
             Login
           </Link>
