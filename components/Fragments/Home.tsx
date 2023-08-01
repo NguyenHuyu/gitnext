@@ -75,7 +75,7 @@ export default function Home() {
                 ref={introRef}
               >
                 <div className="relative text-center md:text-left mt-6 text-xl font-semibold  antialiased text-transparent  bg-clip-text bg-gradient-to-r from-red-700 to-red-500 hover:to-cyan-500">
-                  Frontend Developer
+                  Web Developer
                   <Image
                     src="/bug.svg"
                     width={15}
