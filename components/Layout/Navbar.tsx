@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import {
   Navbar,
   NavbarBrand,
@@ -15,14 +15,17 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 export default function Navbars() {
-  const menuItems = [
-    { label: 'Home', url: '/' },
-    { label: 'Blog', url: '/blog' },
-    { label: 'Profile', url: '/profile' },
-    { label: 'Project', url: '/project' },
-    { label: 'Contact', url: '/contact' },
-    { label: 'Login', url: '/login' }
-  ]
+  const menuItems = useMemo(
+    () => [
+      { label: 'Home', url: '/' },
+      { label: 'Blog', url: '/blog' },
+      { label: 'Profile', url: '/profile' },
+      { label: 'Project', url: '/project' },
+      { label: 'Contact', url: '/contact' },
+      { label: 'Login', url: '/login' }
+    ],
+    []
+  )
   const pathName = usePathname()
   const [active, setActive] = useState('')
 
@@ -33,7 +36,7 @@ export default function Navbars() {
     } else {
       setActive('')
     }
-  }, [pathName])
+  }, [menuItems, pathName])
 
   return (
     <Navbar disableAnimation isBordered className='text-white bg-black'>
