@@ -1,11 +1,10 @@
-import React from "react";
-import type { Metadata } from "next";
+import React from 'react'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Contact | Nguyễn Minh Huy",
-  description: "Profile - Nguyễn Minh Huy",
-};
-
+  title: 'Contact | Nguyễn Minh Huy',
+  description: 'Nguyen Minh Huy - Web developer '
+}
 export default function page() {
-  return <div>OK</div>;
+  return <div></div>
 }

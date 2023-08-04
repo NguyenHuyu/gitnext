@@ -1,11 +1,15 @@
-import HomePage from "@/components/Fragments/Home";
-import type { Metadata } from "next";
+import Home from '@/components/HomeFragment/Home'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Home |  Nguyễn Minh Huy",
-  description: "Home - Nguyễn Minh Huy",
-};
+  title: 'Home | Nguyễn Minh Huy',
+  description: 'Nguyen Minh Huy - Web developer '
+}
 
-export default function Home() {
-  return <HomePage />;
+export default function HomePage() {
+  return (
+    <main className='w-full md:min-h-screen'>
+      <Home />
+    </main>
+  )
 }
